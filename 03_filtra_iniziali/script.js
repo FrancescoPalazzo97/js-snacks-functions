@@ -4,10 +4,20 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-function search(arr, x){
-    let nameFound = [];
+// function search(arr, x){
+//     let nameFound = []; 
+//     for (let i = 0; i < arr.length; i++){
+//         if (x === arr[i].charAt(0).toLowerCase()){
+//             nameFound.push(arr[i]);
+//         }
+//     }
+//     return nameFound;
+// }
+//BONUS
+const search = (arr, x) => {
+    let nameFound = []; 
     for (let i = 0; i < arr.length; i++){
-        if (x === arr[i].charAt(0)){
+        if (x === arr[i].charAt(0).toLowerCase()){
             nameFound.push(arr[i]);
         }
     }
