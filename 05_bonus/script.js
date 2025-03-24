@@ -30,8 +30,7 @@ const hiUser = (user, hour) =>{
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-let time = new Date();
-let hours = time.getHours();
+let hours = new Date().getHours();
 hiUser (name, hours);
 
 
