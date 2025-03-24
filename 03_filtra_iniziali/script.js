@@ -4,10 +4,20 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
+function search(arr, x){
+    let nameFound = [];
+    for (let i = 0; i < arr.length; i++){
+        if (x === arr[i].charAt(0)){
+            nameFound.push(arr[i]);
+        }
+    }
+    return nameFound;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
-
+let nameToSearh = prompt(`Inserisci il nome da cercare`);
+let nameResult = search (names, nameToSearh);
+console.log(nameResult);
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
