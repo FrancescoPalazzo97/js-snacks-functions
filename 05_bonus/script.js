@@ -20,9 +20,9 @@ const name = 'Mario';
 // }
 //BONUS
 const hiUser = (user, hour) =>{
-    if (hour >= 0 && hour <= 13){
+    if (hour <= 13){
         console.log(`Buongiorno ${user}`);
-    } else if (hour > 13 && hour <= 17){
+    } else if (hour <= 17){
         console.log(`Buon pomeriggio ${user}`);
     } else {
         console.log(`Buonasera ${user}`);
