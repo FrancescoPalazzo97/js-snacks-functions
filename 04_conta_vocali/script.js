@@ -15,9 +15,13 @@ const word = 'javascript';
 //BONUS
 const contaVocali = stringa =>{
     let conta = 0;
+    const vocali = [`a`, `e`, `i`, `o`, `u`];
         for (let i = 0; i < stringa.length; i++){
-            if ((stringa[i] === `a`) || (stringa[i] === `e`) || (stringa[i] === `i`) || (stringa[i] === `o`) || (stringa[i] === `u`)){
-                conta += 1;
+            // if ((stringa[i] === `a`) || (stringa[i] === `e`) || (stringa[i] === `i`) || (stringa[i] === `o`) || (stringa[i] === `u`)){
+            //     conta += 1;
+            // }
+            if (vocali.includes(stringa[i])){
+                conta++;
             }
         }
     return conta;
@@ -25,7 +29,7 @@ const contaVocali = stringa =>{
 
 // Invoca la funzione qui e stampa il risultato in console
 let nVocali = contaVocali(word);
-console.log(`Le vocali nella parolsa sono: ${nVocali}`);
+console.log(`Le vocali nella parola sono: ${nVocali}`);
 
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
